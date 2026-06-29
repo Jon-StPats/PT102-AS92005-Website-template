@@ -1,0 +1,38 @@
+/* AS92005 Website Template
+   Students should customise this file to match their planned design.
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: white;
+  color: #222;
+}
+
+header {
+  background-color: #222;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  background-color: white;
+
+}
+
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #222;
+  color: white;
+  text-align: center;
+}
