@@ -10,7 +10,7 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
-  background-color: white;
+  background-color: #f4f4f4;
   color: #222;
 }
 
@@ -21,18 +21,95 @@ header {
   text-align: center;
 }
 
-main {
-  background-color: white;
-
+nav {
+  margin-top: 1rem;
 }
 
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+  display: inline-block;
+}
 
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+nav a:hover {
+  background-color: #444;
+  border-radius: 4px;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: white;
+}
+
+section {
+  margin-bottom: 2rem;
+}
+
+.hero {
+  padding: 2rem;
+  background-color: #e8e8e8;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.button {
+  display: inline-block;
   background-color: #222;
   color: white;
+  text-decoration: none;
+  padding: 0.75rem 1rem;
+  margin-top: 1rem;
+  border-radius: 4px;
+}
+
+.button:hover {
+  background-color: #444;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+figure {
+  margin: 0;
+  padding: 1rem;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+}
+
+figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+footer {
   text-align: center;
+  background-color: #222;
+  color: white;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+  nav a {
+    display: block;
+    margin: 0.25rem 0;
+  }
+
+  .hero {
+    padding: 1rem;
+  }
 }
